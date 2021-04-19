@@ -6,7 +6,7 @@ ruby '3.0.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4', group: :development  # group: :development追記  # development DB
+# gem 'sqlite3', '~> 1.4', group: :development  # group: :development追記  # development DB
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -59,8 +59,6 @@ gem 'carrierwave', '~> 2.0'
 
 gem "mini_magick"
 
-gem 'pg', group: :production  # heroku DB #PostgreSQL
-
 gem 'hirb'                # コンソール出力結果を表にする (DB)
 
 gem 'hirb-unicode'        # コンソール文字の表示を補正する (DB)
@@ -68,3 +66,5 @@ gem 'hirb-unicode'        # コンソール文字の表示を補正する (DB)
 # group :production do
 #   gem 'pg'
 # end
+
+gem 'pg', group: :production
