@@ -59,8 +59,12 @@ gem 'carrierwave', '~> 2.0'
 
 gem "mini_magick"
 
-gem 'pg', group: :production  # heroku DB #PostgreSQL
+# gem 'pg', group: :production  # heroku DB #PostgreSQL
 
 gem 'hirb'                # コンソール出力結果を表にする (DB)
 
 gem 'hirb-unicode'        # コンソール文字の表示を補正する (DB)
+
+group :production do
+  gem 'pg'
+end
