@@ -64,8 +64,8 @@ gem 'hirb'                # コンソール出力結果を表にする (DB)
 
 gem 'hirb-unicode'        # コンソール文字の表示を補正する (DB)
 
-# group :production do
-#   gem 'pg'
-# end
+group :production do
+  gem 'pg'
+end
 
-gem 'pg', group: :production
+# gem 'pg', group: :production
